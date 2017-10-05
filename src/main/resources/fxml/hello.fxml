@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notes.controller.MainController">
+   <children>
+      <TableView fx:id="table" layoutX="16.0" layoutY="14.0" prefHeight="333.0" prefWidth="570.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <columns>
+            <TableColumn text="Дата" fx:id="columnDate"/>
+            <TableColumn prefWidth="51.0" text="Время" fx:id="columnTime"/>
+            <TableColumn minWidth="0.0" prefWidth="438.0" text="Заметка" fx:id="columnNotes"/>
+         </columns>
+      </TableView>
+      <Button layoutX="425.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteNotes" prefHeight="25.0" prefWidth="161.0" text="Удалить заметку" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button layoutX="16.0" layoutY="361.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="25.0" prefWidth="150.0" text="Добавить заметку" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" />
+   </children>
+</AnchorPane>
